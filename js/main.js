@@ -235,7 +235,7 @@ function doneTodoFunc(e) {
         //todoBase.splice(e.target.getAttribute("todoValue"),1);
         delete todoBase[e.target.getAttribute("todoValue")];
         doneCounter ++;
-        proccessCounter--;
+        proccessCounter --;
         todoHeaderCount1.textContent = proccessCounter;
         todoHeaderCount2.textContent = doneCounter;
         console.log(e.target.getAttribute("todoValue"));
@@ -258,7 +258,7 @@ function addTodo(e) {
         todoContent: todoValue,
         todoDate: getMonth + "-" + getYear
     });
-    todoHeaderCount1.textContent = todoBase.length;
+    
     var lastTodo = todoBase[todoBase.length - 1];
     listCardH51.textContent = `Todo No : ${lastTodo.todoNumber}`;
     listCardH61.textContent = `Tarih : ${lastTodo.todoDate}`;
@@ -268,6 +268,7 @@ function addTodo(e) {
     var clone = listItem1.cloneNode(true);
     todoLists1.appendChild(clone);
     proccessCounter++;
+    todoHeaderCount1.textContent = proccessCounter;
     console.log(e.target);
 };
 

@@ -281,6 +281,7 @@ function modeSwitch() {
         modeSwitchButton.classList.toggle("d-mode-switch-l");
         modeSwitchButton.classList.toggle("d-mode-switch-d");
         modeSwitchButton.textContent = "🌕";
+        dmodeHeader.textContent = "Açık Mod 👇👇";
         
     }
     else if(modeSwitchButton.classList.contains('d-mode-switch-d')){
@@ -291,6 +292,7 @@ function modeSwitch() {
         modeSwitchButton.classList.toggle("d-mode-switch-l");
         modeSwitchButton.classList.toggle("d-mode-switch-d");
         modeSwitchButton.textContent = "🌑";
+        dmodeHeader.textContent = "Koyu Mod 👇👇";
     }
     
 }

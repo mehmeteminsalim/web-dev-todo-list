@@ -18,7 +18,7 @@ body.dark{
     border: 1px solid #000000;
     border-radius: 999px;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 20px;
     z-index: 999;
@@ -29,7 +29,7 @@ body.dark{
     border: 1px solid #fff;
     border-radius: 999px;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 20px;
     z-index: 999;
@@ -44,7 +44,7 @@ body.dark{
         margin: 50px auto;
 }
 .dmode-header{
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 70px;
 }
